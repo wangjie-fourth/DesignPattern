@@ -1,5 +1,8 @@
 package org.github.fourth.desgin.pattern.creational.builder.before;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+@SuppressFBWarnings("URF_UNREAD_FIELD")
 public class NutritionFacts {
     private int servingSize;
     private int serving;

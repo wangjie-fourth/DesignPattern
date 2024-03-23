@@ -1,5 +1,8 @@
 package org.github.fourth.desgin.pattern.creational.prototype;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+@SuppressFBWarnings("EI_EXPOSE_REP")
 public class Person {
     private String uid;
     private String firstName;
@@ -19,14 +22,14 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "uid='" + uid + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", gender=" + gender +
-                ", contact=" + contact +
-                ", address=" + address +
-                '}';
+        return "Person{"
+                + "uid='" + uid + '\''
+                + ", firstName='" + firstName + '\''
+                + ", lastName='" + lastName + '\''
+                + ", gender=" + gender
+                + ", contact=" + contact
+                + ", address=" + address
+                + '}';
     }
 
     public String getUid() {

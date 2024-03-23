@@ -19,14 +19,14 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
-                "country='" + country + '\'' +
-                ", province='" + province + '\'' +
-                ", city='" + city + '\'' +
-                ", postCode='" + postCode + '\'' +
-                ", addressLine1='" + addressLine1 + '\'' +
-                ", addressLine2='" + addressLine2 + '\'' +
-                '}';
+        return "Address{"
+                + "country='" + country + '\''
+                + ", province='" + province + '\''
+                + ", city='" + city + '\''
+                + ", postCode='" + postCode + '\''
+                + ", addressLine1='" + addressLine1 + '\''
+                + ", addressLine2='" + addressLine2 + '\''
+                + '}';
     }
 
     public String getCountry() {

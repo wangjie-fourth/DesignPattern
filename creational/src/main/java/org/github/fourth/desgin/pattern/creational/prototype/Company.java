@@ -1,5 +1,8 @@
 package org.github.fourth.desgin.pattern.creational.prototype;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+@SuppressFBWarnings("EI_EXPOSE_REP")
 public class Company implements Cloneable {
     private String companyId;
     private String companyName;
@@ -24,14 +27,14 @@ public class Company implements Cloneable {
 
     @Override
     public String toString() {
-        return "Company{" +
-                "companyId='" + companyId + '\'' +
-                ", companyName='" + companyName + '\'' +
-                ", description='" + description + '\'' +
-                ", companyAddress=" + companyAddress +
-                ", companyContact=" + companyContact +
-                ", legalPerson=" + legalPerson +
-                '}';
+        return "Company{"
+                + "companyId='" + companyId + '\''
+                + ", companyName='" + companyName + '\''
+                + ", description='" + description + '\''
+                + ", companyAddress=" + companyAddress
+                + ", companyContact=" + companyContact
+                + ", legalPerson=" + legalPerson
+                + '}';
     }
 
     public String getCompanyId() {

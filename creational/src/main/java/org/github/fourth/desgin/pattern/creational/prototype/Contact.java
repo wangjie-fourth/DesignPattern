@@ -15,12 +15,12 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "phone='" + phone + '\'' +
-                ", fax='" + fax + '\'' +
-                ", email='" + email + '\'' +
-                ", website='" + website + '\'' +
-                '}';
+        return "Contact{"
+                + "phone='" + phone + '\''
+                + ", fax='" + fax + '\''
+                + ", email='" + email + '\''
+                + ", website='" + website + '\''
+                + '}';
     }
 
     public String getPhone() {
