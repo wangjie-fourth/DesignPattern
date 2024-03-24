@@ -1,9 +1,12 @@
 package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.composite;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class HRDepartment extends  Entity{
+@SuppressFBWarnings("URF_UNREAD_FIELD")
+public class HRDepartment extends Entity {
 
     private List<Entity> children = new ArrayList<>();
 
@@ -24,7 +27,7 @@ public class HRDepartment extends  Entity{
     @Override
     public void displayConstruct(int curLevel) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < curLevel ; i++) {
+        for (int i = 0; i < curLevel; i++) {
             sb.append("-");
         }
         sb.append(entityName);

@@ -1,7 +1,7 @@
 package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.composite;
 
 public abstract class Entity {
-    protected final  String entityName;
+    protected final String entityName;
 
     protected Entity(String entityName) {
         this.entityName = entityName;
@@ -10,7 +10,7 @@ public abstract class Entity {
     // Used for company type
     public abstract void add(Entity entity);
 
-    public abstract  void remove(Entity entity);
+    public abstract void remove(Entity entity);
 
     public abstract void displayConstruct(int curLevel);
 

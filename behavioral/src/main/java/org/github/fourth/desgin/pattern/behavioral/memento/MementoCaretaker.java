@@ -1,8 +1,13 @@
 package org.github.fourth.desgin.pattern.behavioral.memento;
 
-import java.util.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@SuppressFBWarnings("EI_EXPOSE_REP2")
 public class MementoCaretaker {
 
     private Map<String, List<AttributeValue>> maps = new ConcurrentHashMap<>();

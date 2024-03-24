@@ -3,7 +3,7 @@ package org.github.fourth.desgin.pattern.behavioral.chainOfResponsibility.rawHan
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class HardCodeConfigReaderRawHandler implements RawHandler{
+public class HardCodeConfigReaderRawHandler implements RawHandler {
 
     private static final String KEY_FROM_HARD_CODE = "KEY_FROM_HARD_CODE";
 

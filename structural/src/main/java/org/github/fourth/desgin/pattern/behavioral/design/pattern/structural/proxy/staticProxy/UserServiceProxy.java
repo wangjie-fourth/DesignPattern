@@ -2,7 +2,7 @@ package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.pr
 
 import java.time.Instant;
 
-public class UserServiceProxy implements UserService{
+public class UserServiceProxy implements UserService {
 
     private final UserService userService;
 

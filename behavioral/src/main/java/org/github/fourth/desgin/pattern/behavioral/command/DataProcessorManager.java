@@ -10,7 +10,7 @@ public class DataProcessorManager {
 
     public void uodo(List<Command> commandList) {
         for (int i = commandList.size(); i > 0; i--) {
-            commandList.get(i-1).undo();
+            commandList.get(i - 1).undo();
         }
     }
 }

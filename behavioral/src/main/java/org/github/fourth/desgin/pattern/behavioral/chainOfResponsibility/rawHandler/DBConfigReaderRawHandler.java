@@ -3,7 +3,7 @@ package org.github.fourth.desgin.pattern.behavioral.chainOfResponsibility.rawHan
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class DBConfigReaderRawHandler implements RawHandler{
+public class DBConfigReaderRawHandler implements RawHandler {
 
     private static final String KEY_FROM_DB = "KEY_FROM_DB";
 

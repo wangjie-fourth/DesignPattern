@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.strategy.after;
 
-public class Discount300PaymentStrategy extends AbstractPaymentStrategy{
+public class Discount300PaymentStrategy extends AbstractPaymentStrategy {
 
     private static final int DISCOUNT_NUM = 50;
 

@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.composite;
 
-public class SalesDepartment extends Entity{
+public class SalesDepartment extends Entity {
     public SalesDepartment(String entityName) {
         super(entityName);
     }
@@ -18,7 +18,7 @@ public class SalesDepartment extends Entity{
     @Override
     public void displayConstruct(int curLevel) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < curLevel ; i++) {
+        for (int i = 0; i < curLevel; i++) {
             sb.append("-");
         }
         sb.append(entityName);

@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Set;
 
 @Slf4j
-public class ApiConfigReaderChainHandler extends AbstractChainHandler{
+public class ApiConfigReaderChainHandler extends AbstractChainHandler {
 
     private static final String KEY_FROM_API = "KEY_FROM_API";
 

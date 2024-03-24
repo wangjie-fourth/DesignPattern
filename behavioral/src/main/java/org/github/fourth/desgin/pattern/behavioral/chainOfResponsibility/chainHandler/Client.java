@@ -9,7 +9,7 @@ public class Client {
         ChainHandler apiConfigReaderChainHandler = new ApiConfigReaderChainHandler();
         ChainHandler cacheConfigReaderRawHandler = new CacheConfigReaderChainHandler();
 
-        ((ApiConfigReaderChainHandler)apiConfigReaderChainHandler)
+        ((ApiConfigReaderChainHandler) apiConfigReaderChainHandler)
                 .setNextHandler(cacheConfigReaderRawHandler);
 
         Set<String> configKeys = new HashSet<>();

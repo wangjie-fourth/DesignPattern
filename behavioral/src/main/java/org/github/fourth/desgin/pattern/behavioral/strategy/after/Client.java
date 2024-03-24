@@ -1,8 +1,11 @@
 package org.github.fourth.desgin.pattern.behavioral.strategy.after;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressFBWarnings({"DLS_DEAD_LOCAL_STORE", "UC_USELESS_OBJECT"})
 public class Client {
     public static void main(String[] args) {
         List<PaymentStrategy> paymentStrategies = new ArrayList<>();

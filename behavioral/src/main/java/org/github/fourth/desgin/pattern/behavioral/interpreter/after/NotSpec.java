@@ -3,7 +3,7 @@ package org.github.fourth.desgin.pattern.behavioral.interpreter.after;
 
 import org.github.fourth.desgin.pattern.behavioral.interpreter.basic.Product;
 
-public class NotSpec extends Spec{
+public class NotSpec extends Spec {
 
     private Spec spec;
 

@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.strategy.after;
 
-public class GoldMemberPaymentStrategy extends AbstractPaymentStrategy{
+public class GoldMemberPaymentStrategy extends AbstractPaymentStrategy {
     @Override
     public boolean canProcess(Context context) {
         return UserType.GOLD.name().equals(context.getUserType());

@@ -1,6 +1,7 @@
 package org.github.fourth.desgin.pattern.behavioral.interpreter.before;
 
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.github.fourth.desgin.pattern.behavioral.interpreter.basic.Product;
 import org.github.fourth.desgin.pattern.behavioral.interpreter.basic.ProductSize;
 import org.github.fourth.desgin.pattern.behavioral.interpreter.basic.Color;
@@ -8,6 +9,7 @@ import org.github.fourth.desgin.pattern.behavioral.interpreter.basic.Color;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@SuppressFBWarnings("EI_EXPOSE_REP2")
 public class ProductFinder {
 
     private List<Product> productList;

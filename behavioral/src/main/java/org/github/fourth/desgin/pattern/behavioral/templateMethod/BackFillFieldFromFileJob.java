@@ -1,10 +1,13 @@
 package org.github.fourth.desgin.pattern.behavioral.templateMethod;
 
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import javax.annotation.Resource;
 import java.util.List;
 
-public class BackfillFieldFromFileJob {
+@SuppressFBWarnings("DLS_DEAD_LOCAL_STORE")
+public class BackFillFieldFromFileJob {
     @Resource
     private FileManager fileManager;
 

@@ -5,11 +5,10 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum  ProductSize {
+public enum ProductSize {
 
     SMALL,
     MEDIUM,
     LARGE,
-    NOT_APPLICABLE
-    ;
+    NOT_APPLICABLE;
 }

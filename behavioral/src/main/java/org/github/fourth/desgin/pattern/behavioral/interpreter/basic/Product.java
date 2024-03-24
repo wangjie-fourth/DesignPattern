@@ -1,6 +1,10 @@
 package org.github.fourth.desgin.pattern.behavioral.interpreter.basic;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.Builder;
 
 @Getter
 @Setter

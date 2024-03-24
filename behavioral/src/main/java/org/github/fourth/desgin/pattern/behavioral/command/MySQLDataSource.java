@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.command;
 
-public class MySQLDataSource implements DataSource{
+public class MySQLDataSource implements DataSource {
     public void insert(String primaryKey) {
         System.out.println("MySQLDataSource Insert data:" + primaryKey);
     }

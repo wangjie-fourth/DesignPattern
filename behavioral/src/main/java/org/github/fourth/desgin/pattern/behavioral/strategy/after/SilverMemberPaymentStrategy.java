@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.strategy.after;
 
-public class SilverMemberPaymentStrategy  extends AbstractPaymentStrategy{
+public class SilverMemberPaymentStrategy extends AbstractPaymentStrategy {
     @Override
     public boolean canProcess(Context context) {
         return UserType.SILVER.name().equals(context.getUserType());

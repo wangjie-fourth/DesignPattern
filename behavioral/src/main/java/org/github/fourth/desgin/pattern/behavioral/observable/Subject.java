@@ -1,7 +1,10 @@
 package org.github.fourth.desgin.pattern.behavioral.observable;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.List;
 
+@SuppressFBWarnings("EI_EXPOSE_REP2")
 public class Subject {
     private String data;
 
@@ -27,8 +30,6 @@ public class Subject {
     public void addComponent(Component component) {
         this.componentList.add(component);
     }
-
-    
 
 
 }

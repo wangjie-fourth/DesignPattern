@@ -1,8 +1,12 @@
 package org.github.fourth.desgin.pattern.behavioral.memento;
 
-import java.nio.ByteBuffer;
-import java.util.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.nio.ByteBuffer;
+import java.util.List;
+import java.util.Map;
+
+@SuppressFBWarnings({"EI_EXPOSE_REP2", "UUF_UNUSED_FIELD", "URF_UNREAD_FIELD"})
 public class AttributeValue {
 
     private AttributeValueType type = AttributeValueType.OBJECT;
@@ -34,7 +38,19 @@ public class AttributeValue {
         private Map<AttributeValue, AttributeValue> m;
         private Object o;
 
-        public Builder withType(AttributeValue type){
+        private Builder(Builder builder) {
+            this.type = builder.type;
+            this.s = builder.s;
+            this.n = builder.n;
+            this.b = builder.b;
+            this.bOOL = builder.bOOL;
+            this.nULL = builder.nULL;
+            this.l = builder.l;
+            this.m = builder.m;
+            this.o = builder.o;
+        }
+
+        public Builder withType(AttributeValue type) {
             this.type = type;
             return this;
         }
@@ -49,7 +65,7 @@ public class AttributeValue {
             return this;
         }
 
-        public Builder withB (ByteBuffer b) {
+        public Builder withB(ByteBuffer b) {
             this.b = b;
             return this;
         }
@@ -59,35 +75,24 @@ public class AttributeValue {
             return this;
         }
 
-        public Builder withNull (Boolean nULL) {
+        public Builder withNull(Boolean nULL) {
             this.nULL = nULL;
             return this;
         }
 
-        public Builder withList(List<AttributeValue> l){
+        public Builder withList(List<AttributeValue> l) {
             this.l = l;
             return this;
         }
 
-        public Builder withMap(Map<AttributeValue, AttributeValue> m){
+        public Builder withMap(Map<AttributeValue, AttributeValue> m) {
             this.m = m;
             return this;
         }
 
-        public Builder withObject(Object o){
+        public Builder withObject(Object o) {
             this.o = o;
             return this;
-        }
-        private Builder(Builder builder) {
-            this.type = builder.type;
-            this.s = builder.s;
-            this.n = builder.n;
-            this.b = builder.b;
-            this.bOOL = builder.bOOL;
-            this.nULL = builder.nULL;
-            this.l = builder.l;
-            this.m = builder.m;
-            this.o = builder.o;
         }
 
 //        public Object toValue() {

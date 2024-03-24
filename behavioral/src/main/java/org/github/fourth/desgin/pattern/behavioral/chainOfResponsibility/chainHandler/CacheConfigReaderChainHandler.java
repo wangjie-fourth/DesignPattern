@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Set;
 
 @Slf4j
-public class CacheConfigReaderChainHandler extends AbstractChainHandler{
+public class CacheConfigReaderChainHandler extends AbstractChainHandler {
 
     private static final String KEY_FROM_CACHE = "KEY_FROM_CACHE";
 

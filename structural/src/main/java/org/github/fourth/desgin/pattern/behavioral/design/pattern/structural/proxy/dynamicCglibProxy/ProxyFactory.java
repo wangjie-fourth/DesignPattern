@@ -1,7 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.proxy.dynamicCglibProxy;
 
 import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.FixedValue;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 

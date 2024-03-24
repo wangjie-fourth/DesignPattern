@@ -1,7 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.observable;
 
 import java.util.Arrays;
-import java.util.List;
 
 public class Client {
     public static void main(String[] args) {

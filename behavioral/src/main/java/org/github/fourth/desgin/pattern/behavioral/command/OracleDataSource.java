@@ -1,6 +1,6 @@
 package org.github.fourth.desgin.pattern.behavioral.command;
 
-public class OracleDataSource implements DataSource{
+public class OracleDataSource implements DataSource {
 
     public void insert(String primaryKey) {
         System.out.println("Insert data:" + primaryKey);

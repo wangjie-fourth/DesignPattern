@@ -1,7 +1,12 @@
 package org.github.fourth.desgin.pattern.behavioral.chainOfResponsibility.rawHandler;
 
 
-import lombok.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.Builder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,6 +17,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@SuppressFBWarnings({"EI_EXPOSE_REP2", "EI_EXPOSE_REP"})
 public class ConfigContext {
     /**
      * Mutable keys, initialized from request

@@ -1,10 +1,13 @@
 package org.github.fourth.desgin.pattern.behavioral.memento;
 
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class ConfigManagerImpl implements ConfigManager{
+@SuppressFBWarnings("EI_EXPOSE_REP2")
+public class ConfigManagerImpl implements ConfigManager {
 
     // 增加中间层，因为map很难做到rollback指定版本
     private MementoCaretaker mementoCaretaker;
@@ -30,7 +33,7 @@ public class ConfigManagerImpl implements ConfigManager{
     @Override
     public AttributeValue getConfigValue(String key) {
         if (!maps.containsKey(key)) {
-            throw  new IllegalArgumentException("There is no such value");
+            throw new IllegalArgumentException("There is no such value");
         }
         return maps.get(key);
     }

@@ -3,7 +3,7 @@ package org.github.fourth.desgin.pattern.behavioral.design.pattern.structural.co
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompanyEntity extends Entity{
+public class CompanyEntity extends Entity {
 
     private List<Entity> children = new ArrayList<>();
 
@@ -24,7 +24,7 @@ public class CompanyEntity extends Entity{
     @Override
     public void displayConstruct(int curLevel) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < curLevel ; i++) {
+        for (int i = 0; i < curLevel; i++) {
             sb.append("-");
         }
         sb.append(entityName);
